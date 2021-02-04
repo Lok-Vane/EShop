@@ -1,0 +1,132 @@
+/*声明字体图标*/
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?mk3j1r');
+  src: url('../fonts/icomoon.eot?mk3j1r#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?mk3j1r') format('truetype'), url('../fonts/icomoon.woff?mk3j1r') format('woff'), url('../fonts/icomoon.svg?mk3j1r#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+.header {
+  border-bottom: 2px solid #c72a3c;
+}
+.registerarea {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.registerarea .registera_hd {
+  height: 35px;
+  background-color: #efefef;
+}
+.registerarea .registera_hd h5 {
+  height: 35px;
+  line-height: 35px;
+  font-size: 13px;
+}
+.registerarea .registera_hd .title {
+  float: left;
+  margin-left: 10px;
+}
+.registerarea .registera_hd .login {
+  float: right;
+  margin-right: 10px;
+}
+.registerarea .registera_hd .login a {
+  color: #c72a3c;
+  margin-left: 5px;
+}
+.registerarea .registera_bd {
+  border: 2px solid #efefef;
+}
+.registerarea .registera_bd .register_form {
+  width: 600px;
+  margin: 50px auto;
+}
+.registerarea .registera_bd .register_form ul li {
+  position: relative;
+  margin: 15px 0;
+}
+.registerarea .registera_bd .register_form ul li label {
+  display: inline-block;
+  width: 88px;
+  text-align: right;
+}
+.registerarea .registera_bd .register_form ul li label::after {
+  content: "：";
+}
+.registerarea .registera_bd .register_form ul li .inp {
+  position: relative;
+  width: 242px;
+  height: 37px;
+  border: 1px solid #ccc;
+  padding-left: 10px;
+}
+.registerarea .registera_bd .register_form ul li .error {
+  height: 37px;
+  line-height: 37px;
+  margin-left: 10px;
+  display: inline-block;
+  color: #c72a3c;
+}
+.registerarea .registera_bd .register_form ul li .error::before {
+  font-family: 'icomoon';
+  padding: 0 5px;
+  content: "\e9e5";
+}
+.registerarea .registera_bd .register_form ul li .success {
+  height: 37px;
+  line-height: 37px;
+  margin-left: 10px;
+  display: inline-block;
+  color: #40b83f;
+}
+.registerarea .registera_bd .register_form ul li .success::before {
+  font-family: 'icomoon';
+  padding: 0 5px;
+  content: "\e9e1";
+}
+.registerarea .registera_bd .register_form ul li .security {
+  width: 330px;
+  text-align: right;
+  color: #aaaaaa;
+}
+.registerarea .registera_bd .register_form ul li .security em {
+  padding: 0 12px;
+  color: #fff;
+}
+.registerarea .registera_bd .register_form ul li .security .r {
+  background-color: #de1111;
+}
+.registerarea .registera_bd .register_form ul li .security .z {
+  background-color: #40b83f;
+}
+.registerarea .registera_bd .register_form ul li .security .q {
+  background-color: #f79100;
+}
+.registerarea .registera_bd .register_form ul .agree {
+  width: 330px;
+  text-align: right;
+}
+.registerarea .registera_bd .register_form ul .agree input {
+  position: relative;
+  top: 2px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.registerarea .registera_bd .register_form ul .agree a {
+  color: #1ba1e6;
+}
+.registerarea .registera_bd .register_form ul .finish {
+  width: 330px;
+  text-align: right;
+}
+.registerarea .registera_bd .register_form ul .finish button {
+  margin-top: 50px;
+  width: 200px;
+  height: 34px;
+  background-color: #c81623;
+  color: #fff;
+}
+.registerarea .registera_bd .register_form ul .finish button:active {
+  opacity: 0.7;
+}

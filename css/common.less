@@ -1,0 +1,376 @@
+/*公共样式*/
+/*声明字体图标*/
+@font-face {
+    font-family: 'icomoon';
+    src        : url('../fonts/icomoon.eot?mk3j1r');
+    src        : url('../fonts/icomoon.eot?mk3j1r#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?mk3j1r') format('truetype'),
+        url('../fonts/icomoon.woff?mk3j1r') format('woff'),
+        url('../fonts/icomoon.svg?mk3j1r#icomoon') format('svg');
+    font-weight : normal;
+    font-style  : normal;
+    font-display: block;
+}
+
+@color_red : #b1191a;
+@color_red2: #c81623;
+
+.background_icon(@x, @y) {
+    background: url(../images/icon.png) no-repeat @x @y;
+}
+
+/*版心*/
+.w {
+    width : 1200px;
+    margin: 0 auto;
+}
+
+/*快捷导航*/
+.shortcut {
+    height          : 31px;
+    background-color: #f1f1f1;
+    /*行高等于高度，垂直居中，可被继承*/
+    line-height     : 31px;
+
+    ul li {
+        float: left;
+    }
+
+    /*:nth-child(even)选择所有偶数项*/
+    .fr ul li:nth-child(even) {
+        width           : 1px;
+        height          : 12px;
+        background-color: #666;
+        margin          : 9px 15px 0px;
+    }
+}
+
+/*左浮动*/
+.fl {
+    float: left;
+}
+
+/*有浮动*/
+.fr {
+    float: right;
+}
+
+/*红色字体*/
+.style_red {
+    color: @color_red;
+}
+
+/*右侧箭头伪元素*/
+.arrow-icon::after {
+    font-family: 'icomoon';
+    content    : '\eaeb';
+    margin-left: 6px;
+}
+
+/*头部*/
+.header {
+    // position: relative;
+    position              : fixed;
+    left                  : 0;
+    right                 : 0;
+    // background-color   : #fff;
+    background-color      : rgba(255, 255, 255, 0.9);
+    height                : 105px;
+    transition            : border 1s;
+    z-index               : 9999;
+
+    .logo {
+        position: absolute;
+        top     : 25px;
+        width   : 171px;
+        height  : 61px;
+
+        a {
+            display        : block;
+            width          : 171px;
+            height         : 61px;
+            background     : url(../images/logo.ico) no-repeat;
+            background-size: 171px 61px;
+            /*隐藏链接文字*/
+            font-size      : 0;
+        }
+    }
+
+    .search {
+        position      : absolute;
+        left          : 346px;
+        top           : 25px;
+        width         : 538px;
+        height        : 36px;
+        border        : 2px solid @color_red;
+        // height     : 32px;
+
+        input {
+            float           : left;
+            width           : 454px;
+            height          : 32px;
+            padding-left    : 10px;
+            background-color: transparent;
+        }
+
+        button {
+            float           : left;
+            width           : 80px;
+            height          : 32px;
+            background-color: @color_red;
+            font-size       : 16px;
+            color           : #fff;
+        }
+    }
+
+    .hotwords {
+        position: absolute;
+        top     : 66px;
+        left    : 346px;
+
+        ul li {
+            float : left;
+            margin: 0px 10px;
+        }
+    }
+
+    .shopcar {
+        position        : absolute;
+        right           : 60px;
+        top             : 25px;
+        line-height     : 35px;
+        text-align      : center;
+        width           : 140px;
+        height          : 35px;
+        border          : 1px solid #dfdfdf;
+        background-color: #f7f7f7;
+        cursor          : pointer;
+
+        .count {
+            position        : absolute;
+            top             : -5px;
+            left            : 105px;
+            height          : 14px;
+            line-height     : 14px;
+            color           : #fff;
+            background-color: @color_red;
+            padding         : 0 5px;
+            border-radius   : 7px 7px 7px 0;
+        }
+    }
+
+    .shopcar::before {
+        font-family : 'icomoon';
+        content     : '\e93a';
+        margin-right: 5px;
+        color       : @color_red;
+    }
+
+    .shopcar::after {
+        font-family: 'icomoon';
+        content    : '\eaed';
+        margin-left: 10px;
+    }
+}
+
+/*导航*/
+.nav {
+    height       : 47px;
+    border-bottom: 2px solid @color_red;
+    margin-top   : 105px;
+
+    .dropdown {
+        float : left;
+        width : 210px;
+        height: 45px;
+
+        .dt {
+            line-height     : 45px;
+            width           : 210px;
+            height          : 45px;
+            background-color: @color_red;
+            color           : #fff;
+            text-align      : center;
+            font-size       : 16px;
+        }
+
+        .dd {
+            // display         : none;
+            width           : 210px;
+            height          : 465px;
+            background-color: @color_red2;
+            margin-top      : 2px;
+
+            ul {
+                overflow: hidden;
+
+                li {
+                    position    : relative;
+                    height      : 31px;
+                    line-height : 31px;
+                    font-size   : 14px;
+                    margin-left : 2px;
+                    padding-left: 10px;
+                    transition  : all .7s;
+
+                    a {
+                        color       : #fff;
+                        margin-right: 5px;
+                    }
+
+                    a:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                li::after {
+                    font-family: 'icomoon';
+                    content    : '\eaed';
+                    position   : absolute;
+                    right      : 10px;
+                    color      : #fff;
+                    font-size  : 14px;
+                }
+
+                li:hover {
+                    background-color   : #fff;
+                    // transform       : translate(30px, 0);
+                    padding-left       : 30px;
+
+                    a {
+                        color: @color_red2;
+                    }
+                }
+
+                li:hover::after {
+                    color: @color_red2;
+                }
+
+            }
+        }
+    }
+
+    .navitems {
+        ul {
+            li {
+                float: left;
+
+                a {
+                    display    : block;
+                    font-size  : 16px;
+                    height     : 45px;
+                    line-height: 45px;
+                    padding    : 0 25px;
+                }
+            }
+        }
+    }
+}
+
+/*底部模块*/
+.footer {
+    height          : 380px;
+    background-color: #f5f5f5;
+    padding-top     : 30px;
+
+    .mod_service {
+        height       : 80px;
+        border-bottom: 1px solid #ccc;
+
+        ul {
+            li {
+                width       : 300px;
+                height      : 50px;
+                float       : left;
+                padding-left: 35px;
+
+                h5 {
+                    width       : 40px;
+                    height      : 50px;
+                    float       : left;
+                    margin-right: 5px;
+                }
+
+                h5.duo {
+                    .background_icon(0px, -188px);
+                }
+
+                h5.kuai {
+                    .background_icon(-41px, -188px);
+                }
+
+                h5.hao {
+                    .background_icon(-82px, -188px);
+                }
+
+                h5.sheng {
+                    .background_icon(-123px, -188px);
+                }
+
+                h3 {
+                    margin-top: 5px;
+                    font-size : 14px;
+                }
+
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .mod_help {
+        height       : 185px;
+        border-bottom: 1px solid #ccc;
+        padding-top  : 20px;
+        padding-left : 50px;
+
+        dl {
+            float: left;
+            width: 200px;
+
+            dt {
+                font-size    : 16px;
+                margin-bottom: 10px;
+                font-weight  : 1000;
+            }
+
+            dd {
+                margin: 2px 0;
+
+                img {
+                    width: 90px;
+                }
+
+                p {
+                    text-align: center;
+                }
+            }
+        }
+
+        dl:last-child {
+            float: left;
+            width: 90px;
+        }
+    }
+
+    .mod_copyright {
+
+        ul {
+            margin-top : 20px;
+            margin-left: 50px;
+
+            li {
+                float: left;
+            }
+
+            /*:nth-child(even)选择所有偶数项*/
+            li:nth-child(even) {
+                width           : 1px;
+                height          : 12px;
+                background-color: #666;
+                margin          : 4px 20px 0px;
+            }
+        }
+    }
+}

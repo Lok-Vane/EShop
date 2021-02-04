@@ -1,0 +1,451 @@
+/*声明字体图标*/
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?mk3j1r');
+  src: url('../fonts/icomoon.eot?mk3j1r#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?mk3j1r') format('truetype'), url('../fonts/icomoon.woff?mk3j1r') format('woff'), url('../fonts/icomoon.svg?mk3j1r#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+.main {
+  width: 980px;
+  margin-top: 10px;
+  margin-left: 220px;
+  height: 455px;
+}
+.main .focus {
+  float: left;
+  height: 100%;
+  width: 721px;
+}
+.main .newsflash {
+  float: right;
+  height: 100%;
+  width: 250px;
+}
+.main .newsflash .news {
+  height: 165px;
+  border: 1px solid #e4e4e4;
+}
+.main .newsflash .news .news-hd {
+  height: 33px;
+  line-height: 33px;
+  padding: 0 15px;
+  border-bottom: 1px dotted #e4e4e4;
+}
+.main .newsflash .news .news-hd h5 {
+  float: left;
+  font-size: 14px;
+}
+.main .newsflash .news .news-hd a {
+  float: right;
+  position: relative;
+}
+.main .newsflash .news .news-hd a::after {
+  position: relative;
+  top: 1px;
+  font-family: 'icomoon';
+  content: '\eaed';
+}
+.main .newsflash .news .news-bd {
+  height: 132px;
+}
+.main .newsflash .news .news-bd li {
+  padding: 5px 0 0 5px;
+}
+.main .newsflash .news .news-bd li a strong {
+  float: left;
+  background-color: #fdeeed;
+  color: #e1251b;
+  padding: 0 2px;
+  margin-right: 2px;
+}
+.main .newsflash .news .news-bd li a span {
+  display: inline-block;
+  width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.main .newsflash .lifeservice {
+  height: 210px;
+  border: 1px solid #e4e4e4;
+  border-top: none;
+  overflow: hidden;
+}
+.main .newsflash .lifeservice ul {
+  width: 252px;
+}
+.main .newsflash .lifeservice ul li {
+  position: relative;
+  cursor: pointer;
+  float: left;
+  width: 63px;
+  height: 71px;
+  border-right: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+}
+.main .newsflash .lifeservice ul li .service_ico {
+  width: 63px;
+  height: 71px;
+}
+.main .newsflash .lifeservice ul li .service_ico img {
+  width: 31px;
+  height: 31px;
+  margin: 7px 16px;
+}
+.main .newsflash .lifeservice ul li .service_ico div {
+  line-height: 25px;
+  text-align: center;
+}
+.main .newsflash .lifeservice ul li .service_ico .ico_img {
+  display: block;
+}
+.main .newsflash .lifeservice ul li .service_ico .ico_img_hover {
+  display: none;
+}
+.main .newsflash .lifeservice ul li .quan::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 18px;
+  height: 18px;
+  font-size: 10px;
+  line-height: 18px;
+  text-align: center;
+  color: #fff;
+  content: "券";
+  background-color: #e1251b;
+  border-radius: 7px 7px 7px 0;
+}
+.main .newsflash .lifeservice ul li:hover .ico_img {
+  display: none;
+}
+.main .newsflash .lifeservice ul li:hover .ico_img_hover {
+  display: block;
+}
+.main .newsflash .bargain {
+  margin-top: 5px;
+}
+/*推荐模块*/
+.recommend {
+  height: 163px;
+  margin-top: 12px;
+}
+.recommend .recommend_hd {
+  position: relative;
+  float: left;
+  height: 163px;
+  width: 200px;
+  background-color: #5b5250;
+  color: #fff;
+  font-size: large;
+  text-align: center;
+  padding-top: 100px;
+}
+.recommend .recommend_hd::after {
+  position: absolute;
+  font-family: 'icomoon';
+  content: "\e94e";
+  font-size: 60px;
+  top: 10px;
+  left: 70px;
+}
+.recommend .recommend_bd {
+  float: left;
+  height: 163px;
+  width: 1000px;
+}
+.recommend .recommend_bd ul li {
+  float: left;
+  position: relative;
+  transition: all 0.5s;
+}
+.recommend .recommend_bd ul li a img {
+  width: 199px;
+  height: 163px;
+}
+.recommend .recommend_bd ul li:nth-child(even) {
+  float: left;
+  width: 1px;
+  height: 163px;
+  background-color: #fff;
+}
+.recommend .recommend_bd ul li:nth-child(odd):hover {
+  opacity: 0.5;
+}
+.ulike {
+  height: 237px;
+  margin-top: 10px;
+}
+.ulike .ulike_hd {
+  padding: 0 5px;
+  height: 17px;
+}
+.ulike .ulike_hd h4 {
+  float: left;
+  line-height: 17px;
+}
+.ulike .ulike_hd a {
+  float: right;
+  line-height: 17px;
+}
+.ulike .ulike_hd a::after {
+  font-family: 'icomoon';
+  content: " \e984";
+  font-size: 10px;
+}
+.ulike .ulike_bd {
+  height: 220px;
+  border: 1px solid #e4e4e4;
+}
+.ulike .ulike_bd ul li {
+  position: relative;
+  float: left;
+  cursor: pointer;
+  width: 199px;
+  transition: all 0.5s;
+}
+.ulike .ulike_bd ul li img {
+  width: 140px;
+  height: 140px;
+  padding-left: 30px;
+  padding-top: 10px;
+  transition: all 0.5s;
+}
+.ulike .ulike_bd ul li h5 {
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: all 0.5s;
+}
+.ulike .ulike_bd ul li .price {
+  border-radius: 5px;
+  overflow: hidden;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 180px;
+  height: 30px;
+}
+.ulike .ulike_bd ul li .price .present {
+  position: relative;
+  float: left;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 30px;
+  height: 30px;
+  width: 90px;
+  text-align: center;
+  background-color: #e1251b;
+  color: #fff;
+}
+.ulike .ulike_bd ul li .price .present::before {
+  font-size: 10px;
+  content: "¥ ";
+}
+.ulike .ulike_bd ul li .price .present::after {
+  position: absolute;
+  right: -30px;
+  content: "";
+  height: 0px;
+  width: 0px;
+  border-color: transparent transparent #e1251b #e1251b;
+  border-style: solid;
+  border-width: 15px;
+}
+.ulike .ulike_bd ul li .price .original {
+  padding-left: 10px;
+  float: right;
+  font-size: 12px;
+  line-height: 30px;
+  height: 30px;
+  width: 90px;
+  text-align: center;
+  color: #555;
+  background-color: #efefef;
+  text-decoration: line-through;
+}
+.ulike .ulike_bd ul li .price .original::before {
+  font-size: 10px;
+  content: "¥ ";
+}
+.ulike .ulike_bd ul li:not(:last-child)::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 150px;
+  top: 35px;
+  right: -1px;
+  background-color: #e4e4e4;
+}
+.ulike .ulike_bd ul li:hover {
+  background-color: #efefef;
+}
+.ulike .ulike_bd ul li:hover img {
+  opacity: 0.7;
+}
+.ulike .ulike_bd ul li:hover h5 {
+  color: #e1251b;
+}
+.floor {
+  margin-top: 10px;
+  /*电梯跳转*/
+  /*家用电器*/
+}
+.floor .floor_slider {
+  position: absolute;
+  right: calc((100% - 1200px) / 2 - 80px);
+  top: 658px;
+  width: 60px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px #ccc;
+  z-index: 999;
+}
+.floor .floor_slider ul li {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  transition: all 0.5s;
+}
+.floor .floor_slider ul li a {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 19px;
+  width: 28px;
+  transition: all 0.5s;
+}
+.floor .floor_slider ul li:not(:last-child)::after {
+  position: absolute;
+  bottom: 0px;
+  content: "";
+  width: 30px;
+  height: 1px;
+  background-color: #efefef;
+  transition: all 0.5s;
+}
+.floor .floor_slider ul li:hover {
+  background-color: #e1251b;
+}
+.floor .floor_slider ul li:hover a {
+  color: #fff;
+}
+.floor .floor_slider ul li:not(:last-child):hover::after {
+  background-color: #e1251b;
+}
+.floor .floor_slider ul li.kefu::before {
+  font-family: 'icomoon';
+  content: '\e9e1';
+  font-size: 16px;
+  transition: all 0.5s;
+}
+.floor .floor_slider ul li.fankui::before {
+  font-family: 'icomoon';
+  content: '\e970';
+  font-size: 16px;
+  transition: all 0.5s;
+}
+.floor .floor_slider ul li.kefu:hover::before,
+.floor .floor_slider ul li.fankui:hover::before,
+.floor .floor_slider ul li.backtop:hover::before {
+  color: #fff;
+}
+.floor .floor_slider ul li.backtop a {
+  color: #e1251b;
+  transition: all 0.5s;
+}
+.floor .floor_slider ul li.backtop:hover a {
+  color: #fff;
+}
+.floor .floor_slider ul li.backtop::before {
+  font-family: 'icomoon';
+  color: #e1251b;
+  content: '\eaee';
+  font-size: 16px;
+  transition: all 0.5s;
+}
+.floor .floor_1 .box_hd,
+.floor .floor_2 .box_hd {
+  height: 30px;
+  border-bottom: 2px solid #e1251b;
+  margin-bottom: 3px;
+}
+.floor .floor_1 .box_hd h3,
+.floor .floor_2 .box_hd h3 {
+  float: left;
+  font-size: 18px;
+  line-height: 30px;
+  color: #e1251b;
+  font-weight: 400;
+}
+.floor .floor_1 .box_hd .tab_list,
+.floor .floor_2 .box_hd .tab_list {
+  float: right;
+  line-height: 30px;
+}
+.floor .floor_1 .box_hd .tab_list ul li,
+.floor .floor_2 .box_hd .tab_list ul li {
+  float: left;
+}
+.floor .floor_1 .box_hd .tab_list ul li.current a,
+.floor .floor_2 .box_hd .tab_list ul li.current a {
+  color: #e1251b;
+}
+.floor .floor_1 .box_hd .tab_list ul li:nth-child(even),
+.floor .floor_2 .box_hd .tab_list ul li:nth-child(even) {
+  width: 1px;
+  height: 12px;
+  background-color: #666;
+  margin: 9px 15px 0px;
+}
+.floor .floor_1 .box_bd,
+.floor .floor_2 .box_bd {
+  height: 360px;
+}
+.floor .floor_1 .box_bd .tab_content .tab_list_item,
+.floor .floor_2 .box_bd .tab_content .tab_list_item {
+  height: 360px;
+}
+.floor .floor_1 .box_bd .tab_content .tab_list_item ul li,
+.floor .floor_2 .box_bd .tab_content .tab_list_item ul li {
+  float: left;
+  width: 220px;
+  height: 360px;
+  overflow: hidden;
+}
+.floor .floor_1 .box_bd .tab_content .tab_list_item ul li img,
+.floor .floor_2 .box_bd .tab_content .tab_list_item ul li img {
+  width: 220px;
+  height: 180px;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  transition: all 0.5s;
+}
+.floor .floor_1 .box_bd .tab_content .tab_list_item ul li img:hover,
+.floor .floor_2 .box_bd .tab_content .tab_list_item ul li img:hover {
+  transform: translate(-15px, 0);
+  opacity: 0.7;
+}
+.floor .floor_1 .box_bd .tab_content .tab_list_item ul li:nth-child(2),
+.floor .floor_2 .box_bd .tab_content .tab_list_item ul li:nth-child(2) {
+  float: left;
+  width: 320px;
+  height: 360px;
+}
+.floor .floor_1 .box_bd .tab_content .tab_list_item ul li:nth-child(2) img,
+.floor .floor_2 .box_bd .tab_content .tab_list_item ul li:nth-child(2) img {
+  width: 320px;
+  height: 360px;
+}
+.floor .floor_1 .box_bd .tab_content .tab_list_item ul li:nth-child(4) img,
+.floor .floor_2 .box_bd .tab_content .tab_list_item ul li:nth-child(4) img {
+  width: 220px;
+  height: 360px;
+}

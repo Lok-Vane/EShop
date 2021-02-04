@@ -1,0 +1,165 @@
+/*声明字体图标*/
+@font-face {
+    font-family: 'icomoon';
+    src        : url('../fonts/icomoon.eot?mk3j1r');
+    src        : url('../fonts/icomoon.eot?mk3j1r#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?mk3j1r') format('truetype'),
+        url('../fonts/icomoon.woff?mk3j1r') format('woff'),
+        url('../fonts/icomoon.svg?mk3j1r#icomoon') format('svg');
+    font-weight : normal;
+    font-style  : normal;
+    font-display: block;
+}
+
+.header {
+    border-bottom: 2px solid #c72a3c;
+}
+
+.registerarea {
+    margin-top   : 10px;
+    margin-bottom: 10px;
+
+    .registera_hd {
+        height          : 35px;
+        background-color: #efefef;
+
+        h5 {
+            height     : 35px;
+            line-height: 35px;
+            font-size  : 13px;
+        }
+
+        .title {
+            float      : left;
+            margin-left: 10px;
+        }
+
+        .login {
+            float       : right;
+            margin-right: 10px;
+
+            a {
+                color      : #c72a3c;
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .registera_bd {
+        border: 2px solid #efefef;
+
+        .register_form {
+            width : 600px;
+            margin: 50px auto;
+
+            ul {
+                li {
+                    position: relative;
+                    margin  : 15px 0;
+
+                    label {
+                        display   : inline-block;
+                        width     : 88px;
+                        text-align: right;
+                    }
+
+                    label::after {
+                        content: "：";
+                    }
+
+                    .inp {
+                        position    : relative;
+                        width       : 242px;
+                        height      : 37px;
+                        border      : 1px solid #ccc;
+                        padding-left: 10px;
+                    }
+
+                    .error {
+                        height     : 37px;
+                        line-height: 37px;
+                        margin-left: 10px;
+                        display    : inline-block;
+                        color      : #c72a3c;
+                    }
+
+                    .error::before {
+                        font-family: 'icomoon';
+                        padding    : 0 5px;
+                        content    : "\e9e5";
+                    }
+
+                    .success {
+                        height     : 37px;
+                        line-height: 37px;
+                        margin-left: 10px;
+                        display    : inline-block;
+                        color      : #40b83f;
+                    }
+
+                    .success::before {
+                        font-family: 'icomoon';
+                        padding    : 0 5px;
+                        content    : "\e9e1";
+                    }
+
+                    .security {
+                        width     : 330px;
+                        text-align: right;
+                        color     : #aaaaaa;
+
+                        em {
+                            padding: 0 12px;
+                            color  : #fff;
+                        }
+
+                        .r {
+                            background-color: #de1111;
+                        }
+
+                        .z {
+                            background-color: #40b83f;
+                        }
+
+                        .q {
+                            background-color: #f79100;
+                        }
+                    }
+                }
+
+                .agree {
+                    width     : 330px;
+                    text-align: right;
+
+                    input {
+                        position    : relative;
+                        top         : 2px;
+                        margin-right: 5px;
+                        cursor      : pointer;
+                    }
+
+                    a {
+                        color: #1ba1e6;
+                    }
+                }
+
+                .finish {
+                    width     : 330px;
+                    text-align: right;
+
+                    button {
+                        margin-top      : 50px;
+                        width           : 200px;
+                        height          : 34px;
+                        background-color: #c81623;
+                        color           : #fff;
+                    }
+
+                    button:active {
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
+    }
+}

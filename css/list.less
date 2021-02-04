@@ -1,0 +1,219 @@
+/*声明字体图标*/
+@font-face {
+    font-family: 'icomoon';
+    src        : url('../fonts/icomoon.eot?mk3j1r');
+    src        : url('../fonts/icomoon.eot?mk3j1r#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?mk3j1r') format('truetype'),
+        url('../fonts/icomoon.woff?mk3j1r') format('woff'),
+        url('../fonts/icomoon.svg?mk3j1r#icomoon') format('svg');
+    font-weight : normal;
+    font-style  : normal;
+    font-display: block;
+}
+
+/*列表页*/
+.header {
+    .sk {
+        position    : absolute;
+        left        : 150px;
+        top         : 40px;
+        height      : 25px;
+        border-left : 1px solid #c81623;
+        padding-left: 15px;
+
+        h3 {
+            height     : 25px;
+            line-height: 25px;
+            font-size  : 18px;
+            color      : #c72a3c;
+        }
+    }
+}
+
+.nav {
+    .sk_list {
+        float: left;
+
+        ul {
+            li {
+                float     : left;
+                transition: all .3s;
+
+                a {
+                    display    : block;
+                    line-height: 47px;
+                    padding    : 0 30px;
+                    font-size  : 16px;
+                    font-weight: 700;
+                    transition : all .3s;
+                }
+            }
+
+            li:hover,
+            li.current {
+                background-color: #b1191a;
+
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .sk_classif {
+        cursor  : pointer;
+        float   : right;
+        position: relative;
+
+        a.more {
+            display    : block;
+            line-height: 47px;
+            font-size  : 14px;
+        }
+
+        a.more::after {
+            font-family: 'icomoon';
+            content    : '\eaeb';
+        }
+
+        .classif_item {
+            visibility      : hidden;
+            opacity         : 0;
+            cursor          : default;
+            position        : absolute;
+            top             : 60px;
+            right           : 0px;
+            width           : 400px;
+            background-color: #fff;
+            box-shadow      : 0 0 10px #ccc;
+            border-radius   : 5px;
+            transition      : all .7s;
+            z-index         : 99;
+
+            ul {
+                li {
+                    float: left;
+
+                    a {
+                        display     : block;
+                        line-height : 40px;
+                        font-size   : 14px;
+                        width       : 80px;
+                        padding-left: 12px;
+                    }
+                }
+            }
+        }
+
+        .classif_item::before {
+            position    : absolute;
+            top         : -16px;
+            right       : 35px;
+            content     : "";
+            width       : 0;
+            height      : 0;
+            border      : 8px solid;
+            border-color: transparent transparent #fff;
+        }
+    }
+
+    .sk_classif:hover {
+        .classif_item {
+            visibility: visible;
+            opacity   : 1;
+        }
+    }
+}
+
+.sk_container {
+    background-color: #efefef;
+
+    .sk_hd {
+        background-image: linear-gradient(to right, #f0c3c5, #efefef);
+        text-align      : center;
+    }
+
+    .sk_bd {
+        margin-top: 10px;
+
+        ul {
+            display        : flex;
+            justify-content: space-between;
+            flex-wrap      : wrap;
+
+            li {
+                padding         : 5px;
+                width           : 290px;
+                cursor          : pointer;
+                margin-bottom   : 10px;
+                background-color: #fff;
+                transition      : all 0.3s;
+
+                .sk_item {
+                    img {
+                        width: 280px;
+                    }
+
+                    h5 {
+                        padding            : 5px;
+                        display            : block;
+                        width              : 290px;
+                        overflow           : hidden;
+                        // text-overflow   : ellipsis;
+                        // white-space  : nowrap;
+                        white-space        : normal;
+                        word-break         : break-all;
+                    }
+
+                    .price {
+                        display    : block;
+                        color      : #c72a3c;
+                        font-size  : 20px;
+                        font-weight: 800;
+                    }
+
+                    .comment {
+                        display       : block;
+                        font-size     : 14px;
+                        // height     : 30px;
+                        // line-height: 30px;
+                        color         : #333;
+
+                        i {
+                            color: #c72a3c;
+                        }
+                    }
+
+                    .shopname {
+                        color      : #888;
+                        font-weight: 800;
+                        height     : 30px;
+                        line-height: 30px;
+                    }
+
+                    .shopname::after {
+                        font-family: 'icomoon';
+                        content    : "\e9df";
+                    }
+
+                    .tips {
+                        i {
+                            float        : left;
+                            margin-right : 5px;
+                            margin-bottom: 5px;
+                            border       : 1px solid #c72a3c;
+                            padding      : 0 2px;
+                            color        : #c72a3c;
+                        }
+                    }
+                }
+            }
+
+            li:hover {
+                // opacity   : 0.5;
+                box-shadow: 0 0 10px #555;
+                // transform : translate(-5px, -2px);
+            }
+        }
+    }
+}
